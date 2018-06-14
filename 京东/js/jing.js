@@ -1,30 +1,30 @@
 ////首页京东秒杀部分的效果（倒计时）
-//function countTime() {
-//    if(m==undefined,h==undefined,s==undefined){
-//        h=0,m=0,s=0
-//    }
-//    var date = new Date();
-//    var now = date.getTime();
-//    var str = "2018/5/31 15:12:00";
-//    var endDate = new Date(str);
-//    var end = endDate.getTime();
-//    var leftTime = end - now;
-//    var d, h, m, s;
-//    if (leftTime >= 0) {
-//        d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
-//        h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
-//        m = Math.floor(leftTime / 1000 / 60 % 60);
-//        s = Math.floor(leftTime / 1000 % 60);
-//    }
-//    document.getElementById("_h").innerHTML = h;
-//    document.getElementById("_m").innerHTML = m;
-//    document.getElementById("_s").innerHTML = s;
-//    setTimeout(countTime, 1000);
-//
-//}
-//
-//countTime();
-//  
+function countTime(){
+    if(m==undefined,h==undefined,s==undefined){
+        h=0,m=0,s=0
+    }
+    var date = new Date();
+    var now = date.getTime();
+    var str = "2019/5/31 15:12:00";
+    var endDate = new Date(str);
+    var end = endDate.getTime();
+    var leftTime = end - now;
+    var d, h, m, s;
+    if (leftTime >= 0) {
+        d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
+        h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
+        m = Math.floor(leftTime / 1000 / 60 % 60);
+        s = Math.floor(leftTime / 1000 % 60);
+    }
+    document.getElementById("_h").innerHTML = h;
+    document.getElementById("_m").innerHTML = m;
+    document.getElementById("_s").innerHTML = s;
+    setTimeout(countTime, 1000);
+
+}
+
+countTime();
+  
 
 
 

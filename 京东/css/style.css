@@ -694,7 +694,6 @@ nav .hot{
 .sort .main .col-xs-3,.sort .main .col-xs-9{
     overflow: scroll;
     height: 463px;
-   
 }
 
 .sort .main .col-xs-3::-webkit-scrollbar,.sort .main .col-xs-9::-webkit-scrollbar{
