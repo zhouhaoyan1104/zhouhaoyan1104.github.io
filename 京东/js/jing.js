@@ -1,38 +1,38 @@
 ////首页京东秒杀部分的效果（倒计时）
-function countTime(){
-    if(m==undefined,h==undefined,s==undefined){
-        h=0,m=0,s=0
-    }
-    var date = new Date();
-    var now = date.getTime();
-    var str = "2019/5/31 15:12:00";
-    var endDate = new Date(str);
-    var end = endDate.getTime();
-    var leftTime = end - now;
-    var d, h, m, s;
-    if (leftTime >= 0) {
-        d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
-        h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
-        m = Math.floor(leftTime / 1000 / 60 % 60);
-        s = Math.floor(leftTime / 1000 % 60);
-    }
-    document.getElementById("_h").innerHTML = h;
-    document.getElementById("_m").innerHTML = m;
-    document.getElementById("_s").innerHTML = s;
-    setTimeout(countTime, 1000);
+//function countTime(){
+//    if(m==undefined,h==undefined,s==undefined){
+//        h=0,m=0,s=0
+//    }
+//    var date = new Date();
+//    var now = date.getTime();
+//    var str = "2019/5/31 15:12:00";
+//    var endDate = new Date(str);
+//    var end = endDate.getTime();
+//    var leftTime = end - now;
+//    var d, h, m, s;
+//    if (leftTime >= 0) {
+//        d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
+//        h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
+//        m = Math.floor(leftTime / 1000 / 60 % 60);
+//        s = Math.floor(leftTime / 1000 % 60);
+//    }
+//    document.getElementById("_h").innerHTML = h;
+//    document.getElementById("_m").innerHTML = m;
+//    document.getElementById("_s").innerHTML = s;
+//    setTimeout(countTime, 1000);
+//
+//}
 
-}
-
-countTime();
+//countTime();
   
 
 
 
 
 
-
+//回到顶部
 var fanhui=document.querySelector(".dingbu");
-//
+
 fanhui.addEventListener("click",function(){
     var t=setInterval(function(){
         document.body.scrollTop=document.body.scrollTop-20;
@@ -44,7 +44,7 @@ fanhui.addEventListener("click",function(){
 })
 
 
-
+//导航条变颜色，top值0、返回消失
 var search=document.querySelector(".sousuo");
 window.onscroll=function(){
     if(document.body.scrollTop>150){
@@ -57,7 +57,7 @@ window.onscroll=function(){
         search.style.top="auto";
     }
 }
-
+//推荐上下无缝滚动
 function a(){
     $(".news .center .text").css({"transform":"translateY(-22px)","transition":"1s"});
 }
@@ -72,7 +72,7 @@ setInterval(function(){
     },1000)
 },2000)
 
-
+//banner轮播效果
 var mySwiper = new Swiper ('.banner .swiper-container', {
     loop: true,
     pagination:{
@@ -80,6 +80,8 @@ var mySwiper = new Swiper ('.banner .swiper-container', {
     }
 })  
 
+
+//直播轮播效果
 var swiper = new Swiper('.pics .swiper-container', {
       loop: true,
       effect: 'coverflow',
@@ -99,7 +101,7 @@ var swiper = new Swiper('.pics .swiper-container', {
 });
 
 
-
+//推荐数据
 new Vue({
     el:"#tui",
     data:{
@@ -126,7 +128,7 @@ new Vue({
     }
 })
 
-
+//sort中内容数据
 new Vue({
     el:"#nei",
     data:{
@@ -477,7 +479,7 @@ new Vue({
     }
 })
 
-
+//sort中选项卡
 var lis=document.querySelectorAll(".sort .main ul li");
 console.log(lis.length);
 var nei=document.querySelectorAll(".sort .main .nei");
@@ -495,9 +497,13 @@ for(var q=0;q<lis.length;q++){
             $(".sort .main .col-xs-3").animate({scrollTop:46*this.name},500)
         }
         
-    }
-
-
+}
+//sort中页面高度隐藏
+var pagehight=document.documentElement.clientHeight||document.body.clientHeight;
+var asd3=document.querySelector(".main .col-xs-3");
+var asd9=document.querySelector(".main .col-xs-9");
+asd3.style.height=pagehight-56-55+"px";
+asd9.style.height=pagehight-56-55+"px";
 
 
 

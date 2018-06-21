@@ -675,7 +675,7 @@ nav .hot{
 /*-----返回顶部-------*/
 
 /*-----分类页面-------*/
-.sort .main{
+.sort .main,.xunmi .main{
     padding: 50px 0;
 }
 
@@ -693,10 +693,9 @@ nav .hot{
 
 .sort .main .col-xs-3,.sort .main .col-xs-9{
     overflow: scroll;
-    height: 463px;
 }
 
-.sort .main .col-xs-3::-webkit-scrollbar,.sort .main .col-xs-9::-webkit-scrollbar{
+.sort .main .col-xs-3::-webkit-scrollbar,.sort .main .col-xs-9::-webkit-scrollbar,.xunmi .main .uls::-webkit-scrollbar{
     display: none;
 }
 
@@ -716,7 +715,7 @@ nav .hot{
     margin-left: -10px;
 }
 
-.sort .main img{
+.sort .main img,.xunmi .main img{
     width: 100%;
 }
 
@@ -762,12 +761,66 @@ nav .hot{
 }
 /*-----首页进入下载APP-------*/
 
+/*-----寻觅页面开始-------*/
+.xunmi .center h2{
+    color: #2a2a2a;
+    margin: 0;
+    font-size: 26px;
+}
+.xunmi .main .uls{
+    overflow: scroll;
+    width: 345px;
+    position: relative;
+}
 
+.xunmi .main ul{
+    width: 577px;
+    
+}
 
+.xunmi .fa-commenting-o,.xunmi .fa-minus-square-o{
+    color: #81838e;
+}
 
+.xunmi .fa-angle-down{
+    font-size: 20px;
+    background-color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 40px;
+    right: 14px;
+    box-shadow: -8px 0 21px -11px #000;
+}
 
+.xunmi .main ul li{
+    float: left;
+    margin-right: 14px;
+    padding: 0 3px;
+}
 
+.xunmi .main ul li:hover,.xunmi .active{
+    color: #fb2020;
+    border-bottom: 1px #fb2020 solid; 
+}
 
+.xunmi ul li img{
+    width: 20px;
+    height: 20px;
+}
+
+.xunmi .main-center .col-xs-8 img{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+.xunmi .main-center .col-xs-8 p{
+    color: #aaaaaa;
+}
+
+.xunmi .main-center .col-xs-8 h3{
+    font-size: 21px;
+}
 
 
 
