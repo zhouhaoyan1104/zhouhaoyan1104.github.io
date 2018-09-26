@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="shortcut icon" href="img/logo.png">
+    <meta charset="UTF-8">
+    <title>海尔集团商城</title>
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body class="shop">
+   <nav>
+       <ul class="clearfix text-center">
+            <li><a href="index.html">
+            <img class="fa" style="margin: 0 auto" src="img/nav/nav1.png" alt="">
+            <span>逛逛</span></a></li>
+            <li><a href="class.html">
+            <img class="fa" style="margin: 0 auto" src="img/nav/nav1.png" alt="">
+            <img class="fa1" style="margin: 0 auto" src="img/nav/nav5.png" alt="">
+            <span>智家</span></a></li>
+            <li class="active">
+            <a href="shop.html">
+            <img class="fa" style="margin: 0 auto" src="img/nav/nav7.png" alt="">
+            <span>购物车</span></a></li>
+            <li><a href="mine.html"><img class="fa" style="margin: 0 auto" src="img/nav/nav4.png" alt=""><span>我的</span></a></li>
+        </ul>
+    </nav>
+    <!--    搜索栏-->
+    <div class="search text-center">
+        <div class="left">
+            <a href="index.html"><span><i class="fa fa-angle-left"></i></span></a>
+        </div>
+        <div class="txt">
+            <h3>购物车</h3>
+        </div>
+    </div>
+<!--    搜索栏-->
+<!--    banner部分-->
+    <div class="banner text-center">
+        <img src="img/shop/basket.png" alt="">
+        <p class="jiacu">您的购物车暂无商品</p>
+        <p>马上去挑选您钟情的商品吧</p>
+    </div>
+    <div class="main">
+       <h4 class="cheng text-center">猜你喜欢</h4>
+        <div class="cnxh">
+                <ul class="clearfix" id="tui">
+                    <li v-for="arr in arrs">
+                         <a href="#">
+                             <img :src="arr.img" alt="">
+                             <p>{{arr.name}}</p>
+                             <span>{{arr.span1}}{{arr.span}}</span>
+                         </a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    
+    
+    
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

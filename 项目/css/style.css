@@ -1,0 +1,1046 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav a{
+    color: #bababa;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+ul{
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+body{
+    background-color: #f4f4f4;
+}
+.cheng{
+    color: #fb9e2f;
+}
+.news,.main .box,.main .xsjg,.main .gk,.main .yhtj,.main .ztts,.main .jydq,.main .csbh,.main .jujz,.main .zms{
+    background-color: #fff;
+}
+.jiacu{
+    font-weight: bolder;
+}
+
+.main .ztts,.main .yhtj,.main .gk,.main .xsjg,.main .jydq,.main .csbh,.main .jujz,.main .zms{
+    padding-top: 5px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+.my .main .left,nav li,.main .list ul li,.search .left,.search .center,.search .right,.news div,.main .nei ul li,.shop .main .cnxh ul li,.index .main .cnxh ul li,.class .main .cnxh ul li,.my .cnxh ul li,.mine .main .login p,.my .main .list li,.class .nav ul li,.class .main .title .fa-home,.class .main .lists li,.class .main .list-bt li{
+    float: left;
+}
+.my .main .right,.mine .txt,.mine .main .tell1 p,.my .header .search img,.class .main .title .fa-shopping-cart{
+    float: right;
+}
+/*-------通用样式-------*/
+/*-------nav开始-------*/
+nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px #eeeeee solid;
+    padding-top: 5px;
+    background-color: #fff;
+    z-index: 5;
+}
+
+nav li{
+    width: 25%;
+}
+nav .active span{
+    color:#2577e3;
+}
+
+nav .fa{
+    display: block;
+    height: 32px;
+}
+
+nav .fa1{
+    display: none;
+}
+
+
+/*-------nav结束-------*/
+/*-------顶部搜索栏-------*/
+.search{
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+}
+.search .left{
+    width: 22%;
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+.search .right{
+    width: 13%;
+}
+
+.search .center{
+    width: 65%;
+    position: relative;
+}
+
+.search .right img{
+    height: 20px;
+    display: block;
+}
+
+.search .left img{
+    width: 15px;
+    height: 10px;
+}
+
+.search .center input{
+    width: 100%;
+    height: 30px;
+    border-radius: 25px;
+    border: 0;
+    padding: 0px 35px;
+    outline: none;
+    color: #9d9d9d;
+} 
+
+.scol{
+    background-color: #fff;
+    color: #908f95;
+}
+.icol{
+    color: #908f95;
+}
+
+.search a i{
+    color: #fff;
+}
+
+.search .center i{
+    font-size: 14px;
+    color: #908f95;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+}
+.search .right i{
+    display: block;
+    font-size: 16px;
+}
+/*-------顶部搜索栏-------*/
+/*-------banner-------*/
+.banner img{
+    width: 100%;
+    display: block;
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #000;
+    opacity: .2;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/*-------banner-------*/
+/*-------main-list-------*/
+.main {
+    padding-bottom: 54px;
+}
+.main img{
+    width: 100%;
+}
+.main .list img{
+    display: block;
+}
+.main .list .anniu{
+    margin-top: -1px;
+}
+
+.main .list ul{
+    background-image: url(../img/img2.png);
+    background-size:cover;
+    padding-bottom: 30px;
+    padding-top: 14px;
+    margin-top: -1px;
+}
+
+.main .list ul li{
+    width: 25%;
+    color: #fff;
+}
+
+.main .list ul li img{
+    padding: 0 26px;
+}
+
+/*-------main-list-------*/
+/*-----------公告---------*/
+.news{
+    font-size: 12px;
+    padding: 10px 0;
+    margin-bottom: 8px;
+}
+
+.news .left{
+    width: 34%;
+}
+
+.news .center{
+    width: 61%;
+    height: 20px;
+    overflow: hidden;
+}
+
+.news p a{
+    margin-left: 10px;
+    color: #000;
+    font-size: 14px;
+}
+/*-----------公告---------*/
+/*-----------四个框---------*/
+.main .box{
+    padding: 12px 0;
+    margin-bottom: 8px;
+}
+
+.main .box .row,.main .gk .row,.main .ztts .row,.main .yhtj .row{
+    margin:0 -2px;
+}
+
+.main .box .col-xs-6,.main .gk .col-xs-6,.main .gk .col-xs-2,.main .gk .col-xs-4,.main .ztts .col-xs-4,.main .yhtj .col-xs-6{
+    padding:0 2px;
+}
+
+.main .box img{
+    margin-bottom: 4px;
+}
+/*-----------四个框---------*/
+/*-----------限时抢购---------*/
+.main .xsjg{
+    position: relative;
+    color: #ff0505;
+}
+.main .xsjg .title img{
+    width: 22px;
+    height: 18px;
+}
+
+.main .xsjg .right{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: red;
+    font-size: 12px;
+}
+
+.main .xsjg .right img,.main .gk .right img{
+    width: 14px;
+    height: 14px;
+    margin-top: -4px;
+    margin-left: 4px;
+}
+
+.main .xsjg .h,.main .xsjg .m,.main .xsjg .s,.main .xsjg .time{
+    border: 1px #c6c6c6 solid;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.main .xsjg .time{
+    border: 1px #ff0505 solid;
+}
+
+.huise{
+    color: #c6c6c6;
+}
+
+.main .nei{
+    overflow: scroll;
+}
+
+.main .nei::-webkit-scrollbar{
+    display: none;
+}
+
+.main .nei ul{
+    margin-top: 20px;
+    width: 550px;
+}
+
+.main .nei ul li{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.main .nei ul span{
+    color: #ff0505;
+}
+
+.main .nei p,.main .gk .row .col-xs-6 p{
+    color: #5f5f5f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 2px 0;
+}
+
+/*-----------限时抢购---------*/
+/*-----------逛客怎么说---------*/
+.main .gk .title{
+    background-image: url(../img/bg1.png);
+    background-size: cover;
+}
+
+.gk h4,.gk .right p,.zms h4{
+    color: #2979FF;
+}
+
+.main .gk .right img{
+    margin: 0;
+}
+.main .gk .row .col-xs-6 .col-xs-4 a{
+    border: 1px #3e86ff solid;
+    border-radius: 6px;
+    padding: 2px 4px;
+    font-size: 12px;
+}
+.main .gk .siw{ 
+    border-bottom: 2px #f2f2f2 solid;
+}
+.main .gk .col-xs-6 .row{
+    margin-top: 6px;
+}
+
+
+/*-----------逛客怎么说---------*/
+/*-----------优惠推荐---------*/
+.main .yhtj h4{
+    color: #ff5900;
+    margin-bottom: 17px;
+}
+.main .yhtj img{
+    margin-bottom: 4px;
+}
+
+/*-----------优惠推荐---------*/
+/*-----------主题特色---------*/
+.main .ztts h5{
+    margin-bottom: 5px;
+}
+.main .ztts p{
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #a9a9a9;
+}
+
+/*-----------主题特色---------*/
+/*--------------超市百货------*/
+.main .csbh .nei ul{
+    width: 1100px;
+}
+/*--------------超市百货------*/
+/*--------------家具家装------*/
+.main .jujz .nei ul{
+    width: 880px;
+}
+
+/*--------------家具家装------*/
+/*--------------逛客怎么说------*/
+.main .zms .ul div{
+    width: 60%;
+    display: inline-block;
+}
+
+.main .zms .nei{
+    height: 172px;
+    overflow: hidden;
+}
+
+.main .zms .ul{
+    width: 100%;
+    height: 107%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.main .zms .ul::-webkit-scrollbar{
+    display: none;
+}
+
+/*--------------逛客怎么说------*/
+/*--------------首页结束------*/
+
+/*--------------购物车开始------*/
+/*--------------购物车顶部------*/
+.shop .search{
+    background-color: #f8f8f8;
+    border-bottom: 1px #b2b2b2 solid;
+    padding: 2px 0;
+    position: static;
+}
+.shop .search i{
+    font-size: 28px;
+    color: #ababab;
+}
+.shop .search .left{
+    width: 8%;
+}
+.shop .search .txt{
+    width: 93%;
+    color: #444;
+    line-height: 44px;
+}
+.shop .search .txt h3{
+    font-size: 20px;
+    margin-top: 7px;
+    color: #787878;
+}
+/*--------------购物车顶部------*/
+/*--------------购物车banner------*/
+.shop .banner img{
+    width: 60%;
+    display:inline-block;
+}
+.shop .banner p,.shop .main .cnxh p,.my .main .cnxh p{
+    font-size: 12px;
+    margin-bottom: 1px;
+}
+
+/*--------------购物车banner------*/
+/*--------------购物车猜你喜欢------*/
+
+.index .main .guo{
+    background-color: #fff;
+    padding-top: 10px;
+    margin: 1px;
+    padding-bottom: 10px;
+}
+.shop .main h4{
+    height: 14px;
+    color: #666;
+    margin-top: 70px;
+    background: url(../img/shop/bt.png) no-repeat center;
+    background-size: contain;
+    margin-bottom: 20px;
+}
+
+.shop .main .cnxh img,.my .main .cnxh img,.index .main .cnxh img,.class .main .cnxh img,.my .cnxh img{
+    padding: 10px;
+    background-color: #fff;
+}
+
+.shop .main .cnxh p,.index .main .cnxh p,.class .main .cnxh p,.my .cnxh img{
+    color: #333333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 4px 0 6px 4px;
+}
+.my .cnxh img{
+    width: 100%;
+}
+.shop .main .cnxh ul li,.index .main .cnxh ul li,.class .main .cnxh ul li,.my .cnxh ul li{
+    width: 49%;
+    margin-left: 2px;
+    margin-bottom: 8px;
+    background-color: #fbfbfb;
+}
+.my .cnxh ul li img{
+    margin-left: 0;
+}
+.shop .main .cnxh span,.index .main .cnxh span,.class .main .cnxh span,.my .cnxh span{
+    display: block;
+    font-size: 12px;
+    color: #d34346;
+    margin-left: 3%;
+}
+
+/*--------------购物车猜你喜欢------*/
+
+/*--------------我的------*/
+.mine{
+    background-color: #fff;
+}
+.mine h4 a{
+    color: #fff;
+}
+.mine .header{
+    background-image: linear-gradient(0deg, #2979FF 8%, #295BFF 98%);
+    background-color: #296aff;
+    padding-bottom: 42px;
+}
+.mine .search,.my .search{
+    position: static;
+}
+.mine .left{
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.mine .txt{
+    margin-right: 10px;
+}
+.mine .search i{
+    font-size: 28px;
+    color: #fff;
+}
+.mine .header .logo{
+   padding-top: 5px;
+}
+.mine .header .logo img{
+    width: 56px;
+    height: 56px;
+    margin-right: 15px;
+}
+.mine .header .logo h5,.my .header .logo h5{
+    color: #fff;
+    font-size: 16px;
+    display:inline-block;
+}
+/*--------------input------*/
+.mine .main input{
+    border: none;
+    font-size: 14px;
+    outline: none;
+    line-height: 16px;
+    color: #b6b6b6;
+}
+.mine .main .text span{
+    width: 95%;
+    display: inline-block;
+    line-height: 56px;
+    margin: 0 8px;
+    border-bottom: 1px solid #E4E4E4;
+    position: relative;
+}
+.mine .main .tell img,.mine .main .tell1 img{
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+} 
+.mine .main .tell1 img{
+    top: 8px;
+    width: 88px;
+    height: 40px;
+} 
+.mine .main .tell p{
+    font-size: 14px;
+    color: #666;
+    margin: 16px 4px 0 0;
+} 
+.mine .main .tell1 p{
+    font-size: 14px;
+    color: #666;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.mine .main .tell1 .btn3{
+    background: #2979FF;
+}
+.mine .btnn{
+    border-radius: 100px;
+    line-height: 44px;
+    font-size: 16px;
+}
+.mine .btn1{
+    background: #2979FF;
+    box-shadow: 0 2px 4px 0 rgba(41,121,255,0.5);
+    color: #ffffff;
+    margin-top: 32px;
+}
+.mine .btn2{
+    border: 1px solid #2979FF;
+    color: #2979FF;
+    margin-top: 22px;
+}
+.mine .tell1 .btn1{
+    background: #75A8FF;
+}
+.mine .main .login p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.mine .main .login img{
+    top: 14px;
+    width: 100px;
+    height: 30px;
+}
+.mine .txts{
+    width: 80%;
+}
+/*--------------我的------*/
+/*----------我的主页------*/
+.my .header{
+    background-image: url(../img/my/bg.png);
+    background-size: cover;
+    padding-bottom: 38px;
+}
+.my .header .search img{
+    width: 26px;
+    height: 26px;
+}
+.my .header .search{
+    position: relative;
+}
+.my .header .hot,.class .hot{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    top: 10px;
+    right: 0;
+    border-radius: 50%;
+}
+.my .header .logo img{
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    border: 2px #5D9DFF solid;
+    margin-right: 2px;
+    margin-left: 10px;
+}
+.my .header .logo h5{
+    font-size: 18px;
+}
+/*----------header------*/
+/*----------main------*/
+.my .main .top,.my .main .center,.my .main .bottom,.my .main .bottom-b{
+    background-color: #fff;
+    color: #b8b8b8;
+    font-size: 14px;
+}
+
+.my .main h5 a{
+    color: #b8b8b8;
+}
+
+.my .main .left h4{
+    color: #333333;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.my .main .right img{
+    width: 8px;
+    height: 14px;
+    margin-top: -2px;
+    margin-left: 2px;
+}
+
+.my .main .left img{
+    width: 22px;
+    height: 22px;
+    margin-top: -5px;
+}
+
+.my .main .xian{
+    border: 1px #eeeeee solid;
+}
+
+.my .main .list li{
+    width: 20%;
+    padding: 20px 0 5px 0;
+}
+
+.my .main .list li img{
+    width: 26px;
+    height: 26px;
+}
+
+.my .main .list li span a{
+    line-height: 32px;
+    color: #4c4c4c;
+    font-size: 13px;
+}
+
+.my .main .list li h4{
+    margin: 3px 0;
+    color: #4fbeff;
+}
+
+.my .main .center{
+    margin: 10px 0;
+}
+
+.my .main .bottom li{
+    border-right: 1px #eee solid;
+}
+
+.my .main .bottom-b{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.my .main .bottom-b li{
+    border: 1px #eee solid;
+    width: 25%;
+    border-right: none;
+    border-top: none;
+}
+.my .cnxh ul li{
+    padding-bottom: 5px;
+}
+.my .cnxh a{
+    color: #666;
+}
+
+.my .cnxh p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+/*----------main------*/
+
+/*----------分类------*/
+.class .nav .active{
+    color: #72a6ff;
+}
+
+.class .search{
+    background-color: #fff;
+    color: #adadad;
+    margin-bottom: 1px;
+    position: static;
+}
+
+.class .search .right{
+    position: relative;
+}
+
+.class .search .hot{
+    top: 0;
+    right: 4px;
+}
+
+.class .search .center{
+    width: 58%;
+    margin-left: 10px;
+}
+
+.class .search .left{
+    width: 25%;
+}
+
+.class .search .left img{
+    width: 22px;
+    height: 22px;
+}
+
+.class .search .center input{
+    background-color: #f4f4f4;
+}
+
+.class .main .lists{
+    overflow: scroll;
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+.class .nav{
+    background-color: #fff;
+}
+
+.class .main .lists::-webkit-scrollbar{
+    display: none;
+}
+
+.class .main {
+    padding-top: 10px;
+    position: relative;
+}
+
+.class .main h4{
+    margin-top: 0;
+}
+
+.class .main .lists ul{
+    width: 480px;
+}
+
+.class .main .lists li{
+    width: 96px;
+    height: 40px;
+    line-height: 29px;
+}
+
+.class .main .actives{
+    border-bottom: 1px #ca4341 solid;
+    display: block;
+}
+
+.class .main .lists li a{
+    font-size: 16px;
+    color: #000;
+}
+
+.class .main li a.active{
+    color: #ca4341;
+}
+
+.class .fa-angle-right{
+    font-size: 20px;
+    background-color: #fff;
+    padding: 14px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    box-shadow: -8px 0 21px -11px #000;
+}
+
+.class .main .list-bt{
+    background-color: #fbfbfb;
+    border-bottom: 1px #e4e4e6 solid;
+}
+
+.class .main .list-bt li{
+    line-height: 36px;
+    width: 25%;
+    display: block;
+    padding: 10px 0;
+}
+
+.class .main .fa-shopping-cart{
+    color: #4e4e4e;
+}
+
+.class .main .list-bt li a{
+    color: #4e4e4e;
+}
+
+.class .main .list-bt .no .lst1{
+    border: none;
+}
+
+.class .main .list-bt li i{
+    margin-left: 3px;
+}
+
+.class .main .list-bt li .lst1{
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    margin: 8;
+}
+
+.class .main .list-bt .hee{
+    border-right: 1px solid #909090;
+}
+
+.class .main .list-bt .hid{
+    width: 100%;
+    display: none;
+}
+
+.class .main .list-bt .hid p{
+    margin:0;
+    line-height: 40px;
+    font-size: 15px;
+    color: #4e4e4e;
+    padding-left: 20px;
+}
+
+.class .main .list-bt .hid .to{
+    border-bottom: 1px #e4e4e6 solid;
+}
+
+.class .main .cnxh span{
+    line-height: 7px;
+    float: left;
+    color: #d34346;
+    margin-left: 5px;
+}
+
+.class .main .cnxh .xian{
+    display: block;
+}
+
+.class .main .cnxh ul{
+    display: none;
+}
+/*选择地区*/
+
+.xuanze{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.3);
+    display: none;
+    transition: 1s;
+}
+.xuanze .bg{
+    height: 40%;
+    transition: 1s;
+    
+}
+.diqu{
+    position: fixed;
+    left: 0;
+    bottom: -500px;
+    background-color: #f4f4f4;
+    height: 60%;
+    width: 100%;
+    padding-top: 1px;
+    z-index: 120;
+    transition: .5s;
+}
+.diqu .ull{
+    overflow: scroll;
+    height: 90%;
+}
+.diqu .ull ul{
+    display: none;
+}
+
+.diqu h4{
+    height: 44px;
+    background: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin:0 0;
+}
+.diqu ul li{
+    background: #FFFFFF;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px;
+    border-bottom: 1px #dddddd solid;
+}
+.diqu ul li:hover a{
+    color: #ff0000;
+}
+.diqu span{
+    float: right;
+}
+.diqu ul li a{
+    color: #444;
+}
+.diqu .teshu .qxz{
+    height: 41px;
+    display: inline-block;
+    color: red;
+    padding: 0px;
+    border-bottom: 2px solid red;
+}
+
+.diqu .teshu .yxz{
+    height: 41px;
+    display: inline-block;
+    color: #444;
+    padding: 0px;
+    margin-right: 20px;
+}
+
+.tanchu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.3);
+    z-index: 120;
+}
+.kuang .guang{
+    position: fixed;
+    top: 33%;
+    left: 30%;
+    z-index: 130;
+    animation: dong 1s infinite;
+    transition: 1s;
+}
+
+@keyframes dong{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+.tanchu .cuo{
+    margin-top: 53%;
+    margin-left: 47%;
+}
+.main .tell .yin{
+    display: none;
+}
+.main .tell .mi{
+    opacity: 0;
+    margin-left:30px;
+    color: blue;
+    text-align: center;
+    transition: .1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

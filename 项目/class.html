@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="shortcut icon" href="img/logo.png">
+    <meta charset="UTF-8">
+    <title>海尔集团商城</title>
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body class="class">
+   <nav>
+       <ul class="clearfix text-center">
+            <li>
+                <a href="index.html">
+                    <img class="fa" style="margin: 0 auto" src="img/nav/nav1.png" alt="">
+                    <span>逛逛</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="class.html">
+                    <img class="fa" style="margin: 0 auto" src="img/nav/nav5.png" alt="">
+                    <span>智家</span>
+                </a>
+            </li>
+            <li>
+                <a href="shop.html">
+                    <img class="fa" style="margin: 0 auto" src="img/nav/nav3.png" alt="">
+                    <img class="fa1" style="margin: 0 auto" src="img/nav/nav7.png" alt="">
+                    <span>购物车</span>
+                </a>
+            </li>
+            <li>
+                <a href="mine.html">
+                    <img class="fa" style="margin: 0 auto" src="img/nav/nav4.png" alt="">
+                    <img class="fa1" style="margin: 0 auto" src="img/nav/nav8.png" alt="">
+                <span>我的</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--    搜索栏-->
+    <div class="search clearfix text-center sousuo">
+       <div class="container">
+            <div class="left zong"><img src="img/class/1.png" alt="">
+                <span>泊头市</span>
+            </div>
+            <div class="center">
+               <i class="fa fa-search"></i>
+                <input type="text">
+            </div>
+            <div class="right">
+                <img style="margin:0 auto" src="img/class/2.png" alt="">
+                <div class="hot"></div>
+                <span>消息</span>
+            </div>
+        </div>
+    </div>
+<!--    搜索栏-->
+    <div class="main">
+        <div class="container">
+            <div class="title">
+                <a href="shop.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+            <h4 class="text-center">定制列表</h4>
+            </div>
+            <div class="lists">
+               <div class="container">
+                    <ul class="clearfix text-center">
+                        <li class="actives"><a class="active" href="#">冰箱</a></li>
+                        <li><a href="#">洗衣机</a></li>
+                        <li><a href="#">空调</a></li>
+                        <li><a href="#">热水器</a></li>
+                        <li><a href="#">厨电</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-bt">
+               <div class="container hee">
+                    <ul class="clearfix text-center">
+                        <li><a class="lst1 lt" href="#">综合<i class="fa fa-angle-down"></i></a>
+                        </li>
+                        <li><a class="lst1" href="#">价格<i class="fa fa-angle-down"></i></a></li>
+                        <li><a class="lst1" href="#">预售</a></li>
+                        <li class="no"><a class="lst1" href="#">筛选</a></li>
+                    </ul>
+                </div>
+                <div class="hid">
+                    <a href="#"><p class="to">最新上架</p></a>
+                    <a href="#"><p>热销产品</p></a>
+                </div>
+                <div class="container">
+                    <div class="cnxh tui">
+                        <ul class="clearfix tu" v-for="biaoti in biaotis">
+                            <li v-for="arrs in biaoti.ars">
+                                <a href="#">
+                                    <img :src="arrs.img" alt="">
+                                    <p>{{arrs.name}}</p>
+                                    <span class="text-center">{{arrs.span}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="xuanze">
+        <div class="bg"></div>
+    </div>
+    <div class="diqu">
+            <h4 class="text-center">选择地区<span>x</span></h4>
+            <div class="ull">
+                <ul class="jing">
+                    <li class="teshu"><a class="qxz" href="#"><span>请选择</span></a></li>
+                    <li class="er"><a href="#">北京</a></li>
+                    <li class="er"><a href="#">天津</a></li>
+                    <li><a href="#">上海</a></li>
+                    <li><a href="#">重庆</a></li>
+                    <li><a href="#">安徽</a></li>
+                    <li><a href="#">福建</a></li>
+                    <li><a href="#">邯郸</a></li>
+                    <li><a href="#">邢台</a></li>
+                    <li><a href="#">衡水</a></li>
+                    <li><a href="#">广州</a></li>
+                    <li><a href="#">四川</a></li>
+                    <li><a href="#">沙河</a></li>
+                </ul>
+                <ul class="dq">
+                    <li class="teshu">
+                    <a class="yxz" href="#"><span>北京</span></a>
+                    <a class="qxz" href="#"><span>请选择</span></a></li>
+                    <li class="san"><a href="#">北京</a></li>
+                </ul>
+                <ul class="dq">
+                    <li class="teshu">
+                    <a class="yxz" href="#"><span>天津</span></a>
+                    <a class="qxz" href="#"><span>请选择</span></a></li>
+                    <li class="san"><a href="#">天津</a></li>
+                </ul>
+                <ul class="dqe">
+                    <li class="teshu">
+                    <a class="yxz" href="#"><span>北京</span></a>
+                    <a class="yxz" href="#"><span>北京</span></a>
+                    <a class="qxz" href="#"><span>请选择</span></a></li>
+                    <li class="lit">昌平区</li>
+                    <li class="lit">朝阳区</li>
+                    <li class="lit">大兴区</li>
+                    <li class="lit">东城区</li>
+                    <li class="lit">房山区</li>
+                    <li class="lit">丰台区</li>
+                    <li class="lit">海定区</li>
+                    <li class="lit">怀柔区</li>
+                    <li class="lit">平台区</li>
+                    <li class="lit">实景区</li>
+                </ul>
+                <ul class="dqe">
+                    <li class="teshu">
+                    <a class="yxz" href="#"><span>天津</span></a>
+                    <a class="yxz" href="#"><span>天津</span></a>
+                    <a class="qxz" href="#"><span>请选择</span></a></li>
+                    <li class="lit">宝坻区</li>
+                    <li class="lit">北辰区</li>
+                    <li class="lit">滨海新区</li>
+                    <li class="lit">东丽区</li>
+                    <li class="lit">和平区</li>
+                    <li class="lit">河北区</li>
+                    <li class="lit">河东区</li>
+                    <li class="lit">红桥区</li>
+                    <li class="lit">蓟州区</li>
+                    <li class="lit">津南区</li>
+                </ul>
+            </div>
+        </div>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
